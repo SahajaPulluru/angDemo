@@ -1,0 +1,36 @@
+<div class="card mb-5 mb-lg-0">
+    <div class="card-body">
+        <h5 class="card-title text-muted text-uppercase text-center">{{myData.title}}</h5>
+        <h6 class="card-price text-center">${{myData.price}}/month</h6>
+        <hr>
+        <ul>
+            <li>
+                {{myData.user.UA}}
+            </li>
+            <li>
+                {{myData.storage.size}}GB Storage
+            </li>
+            <li>
+                {{myData.pp.ppa}} Public Projects
+            </li>
+            <li>
+                {{myData.ca.caa}}
+            </li>
+            <li [ngClass]="{'text-muted':myData.Upp.disabled}">
+                {{myData.Upp.UPPA}} Private Projects
+            </li>
+            <li [ngClass]="{'text-muted':myData.ps.disabled}">
+                {{myData.ps.psa}} Phone Support
+            </li>
+            <li [ngClass]="{'text-muted':myData.sd.disabled}">
+                {{myData.sd.sda}} Subdomain
+            </li>
+            <li [ngClass]="{'text-muted':myData.sr.disabled}">
+                {{myData.sr.rp}} Status Reports
+            </li>
+        </ul>
+        <div class="d-grid">
+            <a href="#" class="btn btn-primary">SUBSCRIBE</a>
+        </div>
+    </div>
+</div>
